@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Type 1: Naive RAG Explorer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Top Navigation Header -->
+    <header class="top-nav">
+      <div class="nav-brand">
+        <div class="brand-badge">TYPE 1</div>
+        <div class="brand-title">
+          <h1>Naive RAG Explorer</h1>
+          <span class="subtitle">Fixed-Size Chunking + Dense Vector Search + Grounded Generation</span>
+        </div>
+      </div>
+      <div class="nav-meta" id="system-stats">
+        <span class="meta-pill"><span class="dot"></span> <span id="stat-chunks">Loading...</span></span>
+        <span class="meta-pill mono" id="stat-embed">all-MiniLM-L6-v2</span>
+        <span class="meta-pill mono" id="stat-llm">gemini-3.1-flash-lite</span>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="chat-main">
+      <div class="chat-messages" id="chat-messages">
+        <!-- Welcome Hero Message -->
+        <div class="message assistant welcome-card">
+          <div class="message-header">
+            <span class="role-badge">System Ready</span>
+            <span class="time-label">Architecture Baseline</span>
+          </div>
+          <div class="message-content">
+            <h3>Welcome to Naive RAG (Type 1)</h3>
+            <p>
+              This is our baseline implementation built on the <strong>NVIDIA Enterprise Corpus (6 files, 264 chunks)</strong>.
+              It performs fixed-size 500-character window sliding without sentence or table boundary awareness.
+            </p>
+            <div class="suggested-queries">
+              <span class="suggest-label">Try asking:</span>
+              <div class="chips-container">
+                <button class="query-chip" data-query="What was NVIDIA's total revenue in fiscal year 2024?">💰 FY2024 Total Revenue</button>
+                <button class="query-chip" data-query="How much revenue did the Data Center segment generate in FY2024 vs FY2023?">📊 Data Center Growth</button>
+                <button class="query-chip" data-query="How much HBM3e memory does the H200 GPU have and how does it compare to H100?">⚡ H100 vs H200 Memory</button>
+                <button class="query-chip" data-query="What revenue guidance did NVIDIA give for Q1 FY2025?">🎯 Q1 FY2025 Guidance</button>
+                <button class="query-chip" data-query="What is the price of NVIDIA stock today?">🛡️ Out-of-Scope Test</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bottom Input Dock -->
+    <footer class="input-dock">
+      <form id="query-form" class="input-form">
+        <div class="input-wrapper">
+          <input 
+            type="text" 
+            id="query-input" 
+            placeholder="Ask anything about NVIDIA's 10-K, GPU architectures, or earnings call..." 
+            autocomplete="off"
+            required
+          />
+          <button type="submit" id="send-btn" class="send-button">
+            <span class="btn-text">Search & Answer</span>
+            <svg class="send-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="m22 2-7 20-4-9-9-4Z"/>
+              <path d="M22 2 11 13"/>
+            </svg>
+          </button>
+        </div>
+        <div class="input-footer">
+          <span>Top-K: <strong>3 chunks</strong> &bull; Metric: <strong>Cosine Similarity</strong> &bull; Hallucination Defense: <strong>Strict XML Delimited</strong></span>
+        </div>
+      </form>
+    </footer>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
+

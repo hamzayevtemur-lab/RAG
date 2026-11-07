@@ -1,0 +1,265 @@
+================================================================================
+NVIDIA CORPORATION — Q4 FISCAL YEAR 2024 EARNINGS CALL TRANSCRIPT
+Date: Wednesday, February 21, 2024, 5:00 PM Eastern Time
+Participants:
+  - Jensen Huang, Founder, President & Chief Executive Officer
+  - Colette Kress, Executive Vice President & Chief Financial Officer
+  - Stewart Stecker, Vice President, Investor Relations
+================================================================================
+
+OPERATOR:
+Good afternoon. My name is Julie, and I will be your conference operator today. At this time
+I would like to welcome everyone to the NVIDIA Corporation Fourth Quarter Fiscal Year 2024
+Earnings Conference Call. All lines have been placed on mute to prevent any background noise.
+After the speakers' remarks, there will be a question-and-answer session.
+I will now turn the call over to Stewart Stecker, Vice President of Investor Relations.
+
+STEWART STECKER — VP, INVESTOR RELATIONS:
+Thank you, Julie. Good afternoon, everyone, and welcome to NVIDIA's fourth quarter fiscal
+year 2024 conference call. Today's call is being webcast live on NVIDIA's investor relations
+website. The webcast will be available for replay for one year after today.
+
+With me today are Jensen Huang, our founder, President and CEO, and Colette Kress, our EVP
+and CFO. Let me remind you that today's call contains forward-looking statements, and
+investors are advised to read our reports filed with the SEC for a discussion of risk factors
+that could affect our future financial results.
+
+I will now turn the call over to Colette.
+
+COLETTE KRESS — EVP & CFO:
+Thank you, Stewart. I'm pleased to report outstanding results for the fourth quarter and full
+fiscal year 2024.
+
+FOURTH QUARTER FINANCIAL HIGHLIGHTS (Q4 FY2024: November 2023 - January 2024):
+- Q4 Revenue: $22,103 million, up 22% sequentially and up 265% year-over-year.
+- Q4 Data Center Revenue: $18,404 million, a record, up 27% sequentially and up 409% YoY.
+- Q4 Gaming Revenue: $2,865 million, up 56% year-over-year.
+- Q4 Professional Visualization Revenue: $463 million, up 105% year-over-year.
+- Q4 Automotive Revenue: $281 million, up 4% year-over-year.
+- Q4 Gross Margin: 76.0% GAAP, 76.7% non-GAAP.
+- Q4 Operating Income: $13,615 million GAAP.
+- Q4 Diluted EPS: $4.93 GAAP, $5.16 non-GAAP.
+
+FULL FISCAL YEAR 2024 HIGHLIGHTS:
+- FY2024 Total Revenue: $60,922 million, up 126% year-over-year.
+- FY2024 Data Center Revenue: $47,525 million, up 217% year-over-year.
+- FY2024 Gross Margin: 72.7% GAAP, 73.8% non-GAAP.
+- FY2024 Operating Income: $32,972 million GAAP.
+- FY2024 Cash and Marketable Securities: $25,984 million as of January 28, 2024.
+- FY2024 Operating Cash Flow: $28,090 million.
+- Returned $9,927 million to shareholders through share repurchases and dividends.
+- Board authorized an additional $25 billion for future share repurchases.
+
+FIRST QUARTER FISCAL YEAR 2025 GUIDANCE:
+- Q1 FY2025 Revenue: Expected to be $24,000 million, plus or minus 2%.
+- Q1 FY2025 Gross Margin: Expected to be 76.3% GAAP, 77.0% non-GAAP, plus or minus 50 bps.
+- Q1 FY2025 Operating Expenses: Expected to be approximately $3.5 billion GAAP.
+
+Now let me provide more detail on our fourth quarter results by market platform.
+
+DATA CENTER:
+Q4 Data Center revenue of $18,404 million grew 27% sequentially and 409% year-over-year.
+This was our fifth consecutive quarter of sequential Data Center revenue growth. Revenue was
+driven by strong demand for our HGX H100 platform for both training and inference of large
+language models, generative AI applications, and recommender systems.
+
+Cloud service providers represented slightly more than half of our Data Center revenue.
+Large consumer internet companies represented approximately 25% of Data Center revenue, with
+the remainder from enterprise and sovereign AI customers.
+
+Networking revenue within Data Center was $3,208 million in Q4, bringing full-year networking
+revenue to $13,016 million, an increase of 133% year-over-year. InfiniBand revenue roughly
+doubled year-over-year, driven by large-scale AI cluster deployments requiring end-to-end
+InfiniBand networking for maximum GPU utilization.
+
+Regarding China: Following the October 2023 export control rules, Q4 Data Center revenue
+from China declined to approximately 9% of Data Center revenue, down from approximately 22%
+in the first three quarters of the fiscal year. We are sampling our new export-compliant
+products, including the H20, to customers in China. However, we expect competition from
+domestic Chinese semiconductor companies (such as Huawei Ascend processors) to intensify,
+and we cannot predict whether new regulations will further restrict our ability to sell
+compliant products.
+
+GAMING:
+Q4 Gaming revenue was $2,865 million, up 56% year-over-year and up 9% sequentially, driven
+by the continued ramp of GeForce RTX 40 Series GPUs for desktops and laptops based on the
+Ada Lovelace architecture. DLSS 3 adoption continues to expand, with over 500 games and
+applications now supporting DLSS technology.
+
+PROFESSIONAL VISUALIZATION:
+Q4 ProViz revenue was $463 million, up 105% year-over-year, driven by a broad recovery in
+enterprise workstation spending and demand for RTX Ada Generation GPUs. Our Omniverse platform
+continues to see adoption among large industrial manufacturers for digital twin workflows.
+
+AUTOMOTIVE:
+Q4 Automotive revenue was $281 million, up 4% year-over-year. DRIVE Orin design wins
+continue to expand, with over 25 electric vehicle manufacturers now deploying DRIVE platforms
+in production vehicles. We announced that our next-generation DRIVE Thor centralized compute
+platform has been selected by BYD, the world's largest electric vehicle manufacturer, for
+their next-generation intelligent driving architecture.
+
+I will now turn the call over to Jensen.
+
+JENSEN HUANG — FOUNDER, PRESIDENT & CEO:
+Thank you, Colette. We had a spectacular quarter and fiscal year. NVIDIA's data center has
+become the essential engine of the world's AI infrastructure.
+
+Let me describe the major industry dynamics driving our growth:
+
+1. THE TRANSITION TO ACCELERATED COMPUTING:
+   General-purpose computing has run out of gas. CPU performance scaling has slowed from the
+   historical 50% annual improvement to approximately 10% per year. Simultaneously, the
+   computational demands of AI workloads are growing at 10x per year. Accelerated computing
+   is the only viable path forward.
+
+   To illustrate: training GPT-4-class models requires approximately 25,000 A100 GPU-years
+   of compute. On CPUs, this same training would require over 1 million CPU server-years and
+   consume 10x more energy. Accelerated computing is not just faster — it is fundamentally
+   more energy efficient. An NVIDIA GPU system performing AI training is approximately 20x
+   more energy efficient than a CPU-based system for the same task.
+
+2. GENERATIVE AI — THE NEW APPLICATION PLATFORM:
+   Generative AI is creating an entirely new category of software applications. Foundation
+   models trained on broad data are being fine-tuned and customized for every industry. We
+   are seeing sovereign nations invest in building their own AI infrastructure and training
+   their own language models on national data, in their own languages.
+
+   In Q4, we saw significant new cloud instance announcements from all major CSPs:
+   - Microsoft Azure announced general availability of ND H100 v5 instances.
+   - Amazon Web Services launched P5 instances powered by H100 GPUs with UltraCluster
+     support for up to 20,000 H100 GPUs.
+   - Google Cloud expanded its A3 Mega instances with H100 GPUs to additional regions.
+   - Oracle Cloud Infrastructure deployed the world's largest H100 SuperPOD with 16,384 GPUs.
+
+3. SOVEREIGN AI:
+   Nations around the world are recognizing that AI infrastructure is critical national
+   infrastructure. We are working with governments and national carriers in France, India,
+   Japan, Singapore, the UAE, Italy, and others to build sovereign AI clouds.
+
+4. NVIDIA INFERENCE PLATFORM:
+   It's important to understand that NVIDIA GPUs are not just for training. Inference is now
+   our fastest-growing data center workload. In Q4, inference represented approximately 40%
+   of Data Center revenue, up from approximately 30% one year ago. Our inference advantage
+   comes from the combination of Tensor Cores, TensorRT-LLM software, and the ability to
+   run the largest models with the lowest latency and highest throughput.
+
+I'll now open the call for questions.
+
+================================================================================
+QUESTION AND ANSWER SESSION
+================================================================================
+
+ANALYST: TIMOTHY ARCURI (UBS)
+Q: Jensen, you gave Q1 guidance of $24 billion, which implies Data Center revenue above $19
+billion. Can you help us understand the demand trajectory? Are you still supply-constrained,
+and when do you expect supply to catch up with demand?
+
+JENSEN HUANG:
+Tim, demand remains substantially above supply. We are working extremely closely with TSMC
+and our memory suppliers to increase supply of both Hopper and our upcoming Blackwell
+products. We have secured multi-year capacity commitments for CoWoS advanced packaging and
+HBM3e memory.
+
+The constraint today is not semiconductor wafer supply — it is advanced packaging (CoWoS)
+capacity and HBM3e memory availability. Both TSMC and SK Hynix are aggressively expanding
+capacity throughout calendar year 2024, and we expect supply conditions to improve
+progressively. However, I want to be clear: we expect demand to continue to significantly
+exceed supply through at least the first half of fiscal year 2026.
+
+ANALYST: STACY RASGON (BERNSTEIN)
+Q: Colette, your Q4 gross margin was 76%. How should we think about gross margin trajectory
+as you ramp Blackwell, which involves more complex packaging and liquid cooling?
+
+COLETTE KRESS:
+Stacy, as we ramp Blackwell in the second half of fiscal year 2025, we expect gross margins
+to temporarily moderate from the Q4 high of 76% to the low-to-mid 70% range. New product
+introductions typically carry higher initial costs due to lower yields, qualification costs,
+and the ramp of new packaging technologies. As Blackwell matures and volumes scale, we
+expect gross margins to recover toward the mid-70% range.
+
+ANALYST: VIVEK ARYA (BANK OF AMERICA)
+Q: Jensen, regarding China — with Data Center China revenue declining to 9% in Q4, do you
+expect this to stabilize, increase with the H20, or continue to decline?
+
+JENSEN HUANG:
+Vivek, this is a dynamic situation. The H20 product is designed to be compliant with current
+USG regulations, and we are seeing customer interest. However, I want to be transparent:
+Chinese customers are simultaneously evaluating domestic alternatives, including Huawei's
+Ascend 910B processor. We face competitive risks in China that we did not face two years ago.
+
+Furthermore, the regulatory landscape continues to evolve. We cannot predict whether the USG
+will further tighten performance thresholds or impose additional restrictions. We are planning
+our business assuming that China will be a smaller portion of our revenue mix going forward
+compared to historical levels.
+
+ANALYST: AARON RAKERS (WELLS FARGO)
+Q: Can you give us more detail on the Blackwell ramp timeline? When should we expect revenue
+contribution?
+
+COLETTE KRESS:
+Aaron, we expect to begin shipping Blackwell products in the second half of fiscal year 2025,
+which corresponds to the July-January 2025 timeframe. Initial shipments will be qualification
+and early access units. We expect Blackwell to ramp to material revenue contribution in Q3
+and Q4 of fiscal year 2025. We anticipate Blackwell to exceed Hopper revenue within a few
+quarters of its ramp, given the significant performance improvements and strong customer demand.
+
+ANALYST: MATT RAMSAY (TD COWEN)
+Q: Jensen, you mentioned inference is now 40% of Data Center revenue. What's driving that
+mix shift, and how does Blackwell's inference performance change the economics for your customers?
+
+JENSEN HUANG:
+Matt, this is one of the most important dynamics in our business. As enterprises move from
+AI experimentation to production deployment, inference becomes the dominant workload.
+A company might train a model once over weeks, but then serve inference requests billions
+of times per day.
+
+Blackwell's second-generation Transformer Engine with FP4 inference delivers up to 5x more
+inference tokens per second per dollar compared to Hopper H100. This is transformative
+because it dramatically reduces the total cost of ownership for running AI applications at
+scale. We believe this will accelerate enterprise adoption because it makes the ROI calculation
+for deploying generative AI applications significantly more compelling.
+
+ANALYST: TOSHIYA HARI (GOLDMAN SACHS)
+Q: Colette, can you quantify the mix between HGX H100 systems and the newer H200 in your
+Q4 results, and what you expect for Q1?
+
+COLETTE KRESS:
+Toshiya, Q4 was predominantly H100 revenue. The H200 is just beginning to ramp, with initial
+shipments to select cloud partners in Q4. We expect H200 to contribute more meaningfully to
+revenue beginning in Q1 FY2025, particularly as hyperscale customers refresh and expand their
+clusters for inference-heavy workloads where the larger 141GB HBM3e memory capacity provides
+a significant advantage.
+
+ANALYST: HARLAN SUR (JP MORGAN)
+Q: Jensen, can you discuss the enterprise AI opportunity beyond hyperscalers? What industries
+are you seeing the fastest adoption?
+
+JENSEN HUANG:
+Harlan, enterprise AI is our next major growth vector. We're seeing strong early adoption in:
+
+1. Financial Services: Major banks and hedge funds are deploying NVIDIA DGX systems for
+   proprietary trading models, risk analytics, and regulatory compliance automation.
+
+2. Healthcare and Life Sciences: Drug discovery, medical imaging (digital pathology,
+   radiology AI), and genomic analysis. The NVIDIA Clara platform has been adopted by
+   over 50 hospitals and research institutions.
+
+3. Telecommunications: Network optimization, customer service automation, and 5G RAN
+   intelligent controllers. Major carriers including T-Mobile and Deutsche Telekom are
+   deploying NVIDIA AI-on-5G platforms.
+
+4. Manufacturing: Predictive maintenance, quality inspection (computer vision on production
+   lines), and supply chain optimization. BMW, Foxconn, and Siemens are building digital
+   twins with NVIDIA Omniverse.
+
+5. Automotive: Beyond ADAS — fleet management, autonomous trucking, and in-vehicle AI.
+
+We expect enterprise to grow from roughly 25% of Data Center revenue today to a significantly
+larger portion over the next 2-3 years.
+
+STEWART STECKER:
+Thank you, everyone. This concludes our Q4 fiscal year 2024 earnings call. A replay of this
+call will be available on our investor relations website. Good evening.
+
+[END OF TRANSCRIPT]
+

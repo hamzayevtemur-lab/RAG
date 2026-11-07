@@ -1,0 +1,285 @@
+================================================================================
+NVIDIA CORPORATION — CORPORATE GOVERNANCE, ESG & SUSTAINABILITY REPORT
+Fiscal Year 2024 | Published: April 2024
+================================================================================
+
+TABLE OF CONTENTS
+1. Board of Directors & Corporate Governance
+2. Executive Compensation Summary
+3. Environmental Sustainability & Climate Commitments
+4. Workforce Demographics & Diversity Initiatives
+5. Supply Chain Responsibility & Conflict Minerals
+6. Data Privacy & AI Ethics Framework
+7. Community Investment & Philanthropy
+
+================================================================================
+1. BOARD OF DIRECTORS & CORPORATE GOVERNANCE
+================================================================================
+1.1 Board Composition (as of January 28, 2024):
+
+Director Name               Age    Independent    Committee Memberships              Tenure
+----------------------------------------------------------------------------------------------
+Jensen Huang (Chair & CEO)   61    No             None (executive director)          Since 1993
+Mark A. Stevens              60    Yes            Compensation (Chair), Nominating   Since 2008
+Tench Coxe                   67    Yes            Audit (Chair)                      Since 2003
+Dawn Hudson                  67    Yes            Audit, Nominating (Chair)          Since 2013
+John O. Dabiri                43    Yes            None                               Since 2020
+Harvey C. Jones               73    Yes            Audit, Compensation                Since 1993
+Michael G. McCaffery           69    Yes            Compensation, Nominating           Since 2015
+Brooke Seawell                 76    Yes            Audit                              Since 2014
+Aarti Shah                     52    Yes            Nominating                         Since 2020
+Mark L. Perry                  68    Yes            Compensation                       Since 2005
+
+- Total Board Size: 10 directors
+- Independent Directors: 9 of 10 (90%)
+- Female Directors: 3 of 10 (30%)
+- Ethnically Diverse Directors: 3 of 10 (30%)
+- Average Board Tenure: 14.3 years
+- Average Director Age: 63.6 years
+
+1.2 Board Governance Practices:
+- Annual election of all directors (declassified board since 2009).
+- Majority voting standard in uncontested director elections.
+- Proxy access: Shareholders holding 3% of outstanding shares for 3 continuous years may
+  nominate up to 20% of the board (2 directors at current board size).
+- Lead Independent Director: Mark A. Stevens, responsible for setting independent director
+  meeting agendas and serving as liaison between the board and CEO.
+- Board met 8 times in fiscal year 2024, with average attendance of 96%.
+- Executive sessions of independent directors held at every regularly scheduled board meeting.
+
+================================================================================
+2. EXECUTIVE COMPENSATION SUMMARY
+================================================================================
+2.1 Named Executive Officer Compensation (Fiscal Year 2024):
+
+Executive & Title                          Base Salary    Stock Awards    Option Awards    Total Comp
+------------------------------------------------------------------------------------------------------
+Jensen Huang, President & CEO              $996,154       $14,916,578     $17,426,566      $34,174,552
+Colette M. Kress, EVP & CFO               $662,500       $ 8,957,437     $ 9,455,694      $19,494,225
+Ajay K. Puri, EVP, Worldwide Field Ops     $625,000       $ 7,642,173     $ 8,500,120      $17,128,587
+Debora Shoquist, EVP, Operations           $600,000       $ 6,873,412     $ 7,800,300      $15,622,440
+Timothy S. Teter, EVP, GC & Secretary      $600,000       $ 6,873,412     $ 7,800,300      $15,622,440
+
+2.2 CEO Pay Ratio:
+Jensen Huang's total compensation for FY2024 was $34,174,552. The median NVIDIA employee's
+total compensation was $228,054. The resulting CEO-to-median-employee pay ratio was
+approximately 150:1.
+
+2.3 Compensation Philosophy:
+NVIDIA's compensation program is designed to:
+- Attract and retain world-class engineering and leadership talent in an intensely competitive
+  market (competing with Apple, Google, Meta, Microsoft, and leading AI startups for talent).
+- Align executive compensation with long-term shareholder value creation through equity-heavy
+  pay structures (approximately 85% of CEO total compensation was equity-based in FY2024).
+- Tie annual cash bonuses to measurable financial performance metrics including revenue
+  growth, operating margin, and strategic milestones.
+
+Performance-based RSUs (Restricted Stock Units) vest over 4 years with quarterly vesting
+after a one-year cliff. The Compensation Committee uses a peer group of 15 technology
+companies for benchmarking, including AMD, Broadcom, Intel, Qualcomm, Apple, Alphabet,
+Amazon, Meta, Microsoft, Salesforce, Adobe, Synopsys, Cadence, Marvell, and Micron.
+
+================================================================================
+3. ENVIRONMENTAL SUSTAINABILITY & CLIMATE COMMITMENTS
+================================================================================
+3.1 NVIDIA's Climate Strategy:
+NVIDIA has committed to achieving 100% renewable electricity for its global offices and data
+centers by the end of calendar year 2025. As of FY2024, approximately 76% of our global
+electricity consumption was sourced from renewable energy certificates (RECs) and power
+purchase agreements (PPAs).
+
+3.2 Greenhouse Gas Emissions (Metric Tons CO2 Equivalent):
+Emission Category                      FY2024          FY2023          FY2022
+--------------------------------------------------------------------------------
+Scope 1 (Direct Emissions)            19,200          18,500          17,800
+Scope 2 (Purchased Electricity,       54,300          42,100          38,600
+         Market-Based)
+Scope 2 (Purchased Electricity,       118,500          89,400          72,300
+         Location-Based)
+Scope 3 (Value Chain, estimated)      3,200,000       1,800,000       1,500,000
+
+Note: The substantial increase in Scope 3 emissions reflects the dramatic growth in GPUs
+sold and deployed in data centers globally. The majority of our Scope 3 footprint (estimated
+85-90%) comes from the electricity consumed during the operational lifetime of NVIDIA GPUs
+deployed in customer data centers (Category 11: Use of Sold Products).
+
+3.3 Energy Efficiency of NVIDIA Products:
+While our Scope 3 emissions have grown, we emphasize that NVIDIA accelerated computing
+dramatically reduces the total energy required for AI workloads compared to CPU-only
+alternatives:
+- AI Training Energy Comparison: Training a GPT-3 175B model on NVIDIA A100 GPUs consumes
+  approximately 1,287 MWh. Training the same model on optimized CPU clusters would require
+  an estimated 12,870 MWh — approximately 10x more energy.
+- AI Inference Energy Comparison: Serving 1 million inference queries on Llama 2 70B using
+  NVIDIA H100 with TensorRT-LLM requires approximately 12 kWh. The same workload on
+  optimized CPU infrastructure would require approximately 250 kWh — over 20x more energy.
+- Data Center Accelerated Computing: If every CPU-based data center server performing AI and
+  HPC workloads worldwide were replaced with NVIDIA accelerated computing, we estimate total
+  global data center energy consumption for those workloads would decrease by 12x.
+
+3.4 Water Stewardship:
+Our Santa Clara headquarters campus uses recycled water for landscaping and cooling tower
+makeup water, reducing potable water consumption by approximately 55 million gallons per year.
+Total water withdrawal across all NVIDIA-operated facilities in FY2024 was approximately
+420 million gallons.
+
+3.5 E-Waste and Product Lifecycle:
+NVIDIA GPU products are designed for a minimum operational lifetime of 5 to 7 years in data
+center environments. We participate in electronic waste recycling programs and maintain
+take-back programs for end-of-life products in compliance with the EU WEEE Directive and
+similar regulations.
+
+================================================================================
+4. WORKFORCE DEMOGRAPHICS & DIVERSITY INITIATIVES
+================================================================================
+4.1 Total Workforce (as of January 28, 2024):
+- Full-Time Employees: 29,600 (up from 26,196 in FY2023, an increase of 13%)
+- Contractors and Temporary Workers: Approximately 6,500
+- Total Workforce: Approximately 36,100
+
+4.2 Workforce by Function:
+Function                      Headcount        % of Total FTE
+---------------------------------------------------------------
+Research & Development         19,832           67.0%
+Sales, General & Admin          5,180           17.5%
+Operations & Manufacturing      3,256           11.0%
+Executive & Management          1,332            4.5%
+---------------------------------------------------------------
+Total Full-Time Employees      29,600          100.0%
+
+4.3 Workforce by Geography:
+Region                          Headcount        % of Total FTE
+-----------------------------------------------------------------
+United States                    13,024           44.0%
+India                             5,624           19.0%
+Taiwan                            3,256           11.0%
+China (including Hong Kong)       2,368            8.0%
+Israel                            1,776            6.0%
+Europe (UK, Germany, Finland)     1,776            6.0%
+Other (Canada, Japan, Korea)      1,776            6.0%
+-----------------------------------------------------------------
+Total Full-Time Employees        29,600          100.0%
+
+4.4 U.S. Workforce Diversity (EEO-1 Categories, U.S. Only):
+Gender Representation (U.S.):
+- Male: 79.3% (down from 80.1% in FY2023)
+- Female: 19.8% (up from 19.1% in FY2023)
+- Non-binary / Not Disclosed: 0.9%
+
+Racial/Ethnic Representation (U.S.):
+- Asian: 56.2%
+- White: 28.1%
+- Hispanic/Latino: 6.4%
+- Black/African American: 3.2%
+- Two or More Races: 3.8%
+- Other / Not Disclosed: 2.3%
+
+Technical Roles (Engineering) Gender Breakdown (U.S.):
+- Male: 83.6%
+- Female: 15.2%
+- Non-binary / Not Disclosed: 1.2%
+
+Leadership (VP and Above) Gender Breakdown (Global):
+- Male: 82.4%
+- Female: 17.6%
+
+4.5 Diversity, Equity & Inclusion (DEI) Programs:
+- NVIDIA Women in Technology (NVWiT): Internal employee resource group with over 2,500
+  members across 15 countries, providing mentorship, career development, and community.
+- Black NVIDIA Network (BNN): Focused on recruitment, retention, and advancement of Black
+  employees. Partners with HBCUs (Historically Black Colleges and Universities) including
+  Howard University and Morehouse College for engineering recruitment pipelines.
+- NVIDIA Hispanic/Latino Network (NHLN): Supports professional development and cultural
+  community for Hispanic and Latino employees.
+- NVIDIA Veterans Program: Dedicated hiring program for U.S. military veterans transitioning
+  to technology careers, with mentorship and skills-mapping resources.
+- Early Career Programs: Over 1,200 interns hosted in FY2024 across engineering, research,
+  design, and business functions. Intern-to-full-time conversion rate: approximately 68%.
+- Pay Equity: NVIDIA conducts annual pay equity audits. In FY2024, the audit confirmed no
+  statistically significant pay gaps based on gender or ethnicity after controlling for role,
+  level, location, and tenure.
+
+================================================================================
+5. SUPPLY CHAIN RESPONSIBILITY & CONFLICT MINERALS
+================================================================================
+5.1 Responsible Sourcing:
+NVIDIA is a member of the Responsible Business Alliance (RBA), formerly the Electronic
+Industry Citizenship Coalition (EICC). We require our Tier 1 suppliers and key Tier 2
+suppliers (including TSMC, ASE Group, Amkor Technology, SK Hynix, Samsung, and Micron)
+to comply with the RBA Code of Conduct, which covers:
+- Labor: No forced labor, no child labor, maximum 60-hour work weeks, right to freedom of
+  association, and legally mandated wages and benefits.
+- Health & Safety: Occupational safety management, emergency preparedness, industrial hygiene.
+- Environment: Hazardous substance management, wastewater treatment, air emission controls.
+- Ethics: Anti-corruption, intellectual property protection, responsible sourcing of minerals.
+
+5.2 Conflict Minerals (SEC Rule 13p-1):
+NVIDIA files an annual Conflict Minerals Report (Form SD) with the SEC. Our products may
+contain tin, tantalum, tungsten, and gold (3TG) originating from smelters and refiners in
+the Democratic Republic of the Congo (DRC) or adjoining countries. As of our most recent
+filing:
+- We identified 287 smelters and refiners in our supply chain for 3TG minerals.
+- 98% of identified smelters (281 of 287) were certified as conformant by the Responsible
+  Minerals Initiative (RMI) or equivalent third-party audit programs.
+- 6 smelters were in the process of completing certification audits.
+- We have not identified any smelters directly financing armed conflict in the DRC region.
+
+================================================================================
+6. DATA PRIVACY & AI ETHICS FRAMEWORK
+================================================================================
+6.1 NVIDIA AI Ethics Principles:
+NVIDIA has published a set of AI Ethics Principles that guide our product development,
+research, and customer engagements:
+1. Safety: AI systems should be designed, developed, and deployed with safety as a primary
+   consideration. We invest in research on AI alignment, robustness, and interpretability.
+2. Trustworthiness: We strive for transparency about AI system capabilities and limitations.
+3. Fairness: We work to identify and mitigate bias in AI models and datasets.
+4. Privacy: We design our platforms and tools to enable privacy-preserving AI, including
+   support for federated learning, differential privacy, and on-premises deployment.
+5. Inclusivity: We work to ensure AI benefits are accessible to diverse communities globally.
+6. Accountability: We maintain clear accountability for AI system behavior and outcomes.
+
+6.2 AI Red Team:
+NVIDIA maintains an internal AI Red Team that proactively tests our AI products and services
+for safety vulnerabilities, adversarial robustness, bias, toxicity, and security issues before
+public release. The AI Red Team works in collaboration with our product security incident
+response team (PSIRT).
+
+6.3 Data Privacy Compliance:
+NVIDIA complies with applicable global data privacy regulations, including:
+- EU General Data Protection Regulation (GDPR)
+- California Consumer Privacy Act (CCPA) / California Privacy Rights Act (CPRA)
+- China Personal Information Protection Law (PIPL)
+- Brazil General Data Protection Law (LGPD)
+- India Digital Personal Data Protection Act (DPDPA)
+
+NVIDIA does not sell GPU hardware or software in exchange for customer data. Our cloud
+services (NGC, DGX Cloud, Omniverse Cloud) process customer data only as directed by the
+customer and in accordance with our Data Processing Agreement (DPA).
+
+================================================================================
+7. COMMUNITY INVESTMENT & PHILANTHROPY
+================================================================================
+7.1 NVIDIA Foundation:
+Total charitable contributions (cash and in-kind) in FY2024: $55 million (up from $42
+million in FY2023).
+
+Key Programs:
+- Compute the Cure: Donating GPU computing resources to cancer research institutions. Since
+  inception, the program has provided over 300 petaflops of donated compute time to
+  organizations including Stanford Medicine, Memorial Sloan Kettering, and the National
+  Cancer Institute.
+- Inception Program: NVIDIA's startup accelerator has supported over 16,000 AI startups
+  globally with technical resources, go-to-market support, and venture capital introductions.
+  Over 1,800 Inception startups are now valued at over $1 billion (unicorn status).
+- DLI Teaching Kits: Free curriculum kits provided to over 3,000 universities worldwide
+  for teaching deep learning, robotics, and accelerated computing.
+- Disaster Relief: $8.2 million donated to disaster relief organizations in FY2024, including
+  support for communities affected by the Maui wildfires, Turkey/Syria earthquake recovery,
+  and flooding in India.
+
+7.2 Employee Volunteering & Matching:
+- Employee Volunteer Hours: Over 45,000 volunteer hours logged by NVIDIA employees in FY2024.
+- NVIDIA matches employee charitable donations up to $15,000 per employee per year.
+- Total employee giving and corporate match: $22.8 million in FY2024.
+

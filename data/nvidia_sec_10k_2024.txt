@@ -1,0 +1,352 @@
+UNITED STATES
+SECURITIES AND EXCHANGE COMMISSION
+Washington, D.C. 20549
+FORM 10-K
+
+ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934
+For the Fiscal Year Ended January 28, 2024 (Fiscal Year 2024)
+Commission File Number: 000-23985
+
+NVIDIA CORPORATION
+(Exact name of registrant as specified in its charter)
+
+Delaware                                       94-3177549
+(State or other jurisdiction of                (I.R.S. Employer
+incorporation or organization)                 Identification No.)
+
+2788 San Tomas Expressway, Santa Clara, California 95051
+(Address of principal executive offices) (Zip Code)
+Registrant's telephone number: (408) 486-2000
+
+Securities registered pursuant to Section 12(b) of the Act:
+Title of each class: Common Stock, $0.001 par value per share
+Trading Symbol: NVDA
+Name of each exchange on which registered: The Nasdaq Global Select Market
+
+================================================================================
+TABLE OF CONTENTS
+================================================================================
+PART I
+Item 1.   Business
+Item 1A.  Risk Factors
+Item 1B.  Unresolved Staff Comments
+Item 2.   Properties
+Item 3.   Legal Proceedings
+Item 4.   Mine Safety Disclosures
+
+PART II
+Item 5.   Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities
+Item 7.   Management's Discussion and Analysis of Financial Condition and Results of Operations (MD&A)
+Item 7A.  Quantitative and Qualitative Disclosures About Market Risk
+Item 8.   Financial Statements and Supplementary Data
+          - Consolidated Statements of Income
+          - Consolidated Balance Sheets
+          - Consolidated Statements of Cash Flows
+          - Note 1: Description of Business and Summary of Significant Accounting Policies
+          - Note 2: Segment Information and Geographic Data
+          - Note 3: Stock-Based Compensation
+          - Note 4: Leases and Commitments
+          - Note 5: Income Taxes
+Item 9.   Controls and Procedures
+
+================================================================================
+PART I
+================================================================================
+
+--------------------------------------------------------------------------------
+ITEM 1. BUSINESS
+--------------------------------------------------------------------------------
+Overview:
+NVIDIA pioneered accelerated computing to tackle challenges that ordinary computers cannot solve. Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, the company initially revolutionized PC gaming through the invention of the Graphics Processing Unit (GPU) in 1999. Today, accelerated computing is recognized as the essential computing architecture for modern artificial intelligence (AI), high-performance computing (HPC), digital twins, robotics, and cloud gaming.
+
+Accelerated computing delivers orders-of-magnitude performance gains and energy efficiency improvements over conventional general-purpose computing executed on central processing units (CPUs). Our platform integrates hardware—including GPUs, CPUs, Data Processing Units (DPUs), and interconnects—with specialized system software, CUDA (Compute Unified Device Architecture), application programming interfaces (APIs), software development kits (SDKs), libraries, and domain-specific applications.
+
+Hardware Architectures & Platforms:
+1. Hopper GPU Architecture:
+   Introduced in fiscal year 2023 and ramped through fiscal year 2024, the Hopper architecture (featuring the NVIDIA H100 and H200 Tensor Core GPUs) is built on TSMC's 4N process node. It features Fourth-Generation Tensor Cores, a new Transformer Engine with FP8 precision, DPX instructions for dynamic programming, and second-generation asynchronous transfer engines. The H200 incorporates 141 gigabytes (GB) of high-bandwidth memory (HBM3e) running at 4.8 terabytes per second (TB/s), delivering double the memory capacity and 1.4x the bandwidth of the H100.
+
+2. Grace CPU Architecture:
+   The NVIDIA Grace CPU is our first proprietary data center CPU designed specifically for giant-scale AI and HPC workloads. Utilizing 72 ARM Neoverse V2 cores connected via our ultra-fast 3.2 TB/s bidirectional Scalable Coherency Fabric (SCF), Grace delivers up to 2x higher energy efficiency compared to traditional x86 server processors. In the Grace Hopper Superchip (GH200), Grace is coupled with a Hopper GPU across the NVLink-C2C interconnect, providing 900 GB/s of coherent bidirectional bandwidth.
+
+3. Quantum & Spectrum Networking:
+   NVIDIA networking solutions comprise InfiniBand and Ethernet technologies. Quantum-2 InfiniBand delivers 400 Gb/s per port with in-network computing (SHARPv3). Spectrum-4 Ethernet offers up to 51 Gb/s per port and provides zero-loss telemetry and adaptive routing for multi-tenant generative AI workloads in standard enterprise Ethernet data centers.
+
+4. Software & Platform Ecosystem:
+   The CUDA architecture, introduced in 2006, represents over 18 years of continuous optimization across millions of software developers. Today, more than 4.5 million developers globally build on CUDA. Our software stack includes:
+   - NVIDIA AI Enterprise: A comprehensive commercial operating system and runtime for enterprise production AI.
+   - TensorRT & TensorRT-LLM: Highly optimized inference compilers executing quantization (INT4, FP8, INT8), kernel auto-tuning, and KV-caching.
+   - NeMo: An end-to-end cloud-native framework to build, customize, and run generative AI models with billions of parameters.
+   - Omniverse: A platform for connecting and developing 3D pipelines, physics simulations, and industrial digital twins based on Universal Scene Description (OpenUSD).
+
+Reportable Segments & Specialized Markets:
+We have two reportable segments: Compute & Networking, and Graphics.
+We target four specialized markets:
+- Data Center: Accelerated infrastructure for training and deploying foundation models, large language models (LLMs), generative AI, cloud hyperscalers, sovereign AI clouds, and scientific discovery.
+- Gaming: GeForce RTX GPUs, laptops, desktop systems, and GeForce NOW cloud gaming services.
+- Professional Visualization (ProViz): Desktop and mobile workstations for 3D modeling, computer-aided design (CAD), visual effects, and medical imaging.
+- Automotive: NVIDIA DRIVE platform covering DRIVE Orin and DRIVE Thor system-on-chips (SoCs) for autonomous vehicles, advanced driver assistance systems (ADAS), and AI cockpit solutions.
+
+Manufacturing & Foundry Dependencies:
+NVIDIA operates a fabless manufacturing model. We do not manufacture our own semiconductor wafers. We rely predominantly on Taiwan Semiconductor Manufacturing Company Limited (TSMC) to fabricate our leading-edge silicon wafers on specialized semiconductor nodes (e.g., TSMC 4N). Advanced packaging technologies, including CoWoS (Chip-on-Wafer-on-Substrate), are performed primarily by TSMC and other outsourced semiconductor assembly and test (OSAT) vendors including ASE Group and Amkor Technology. High Bandwidth Memory (HBM3 and HBM3e) stacks are supplied primarily by SK Hynix, Samsung Electronics, and Micron Technology.
+
+--------------------------------------------------------------------------------
+ITEM 1A. RISK FACTORS
+--------------------------------------------------------------------------------
+Our business, financial condition, results of operations, and stock price are subject to numerous risks, including but not limited to:
+
+1. Geopolitical Uncertainties and United States Export Regulations:
+The U.S. government (USG) has imposed stringent export controls on our high-performance accelerated computing chips and networking equipment shipped to China and other designated countries (Country Groups D1, D4, and D5, including Russia, Iran, and certain Middle Eastern jurisdictions).
+- In October 2022 and October 2023, the USG published interim final rules (the "Export Controls Rules") that lowered the performance thresholds for export licenses. These rules effectively restricted shipments of our A100, A800, H100, H800, L40, L40S, and RTX 4090 products to China, Macau, and other restricted destinations without an explicit USG export license.
+- Historically, sales to customers headquartered in China (including Hong Kong) represented approximately 20% to 25% of our Data Center segment revenue. Following the implementation of the October 2023 export controls, Data Center revenue from China declined significantly to single-digit percentages in the fourth quarter of fiscal year 2024.
+- If the USG expands export restrictions to lower performance tiers, bans additional software stacks, or revokes existing licenses, our competitive position, long-term market presence in China, and financial results will be materially and adversely affected.
+
+2. Single-Source Manufacturing and Advanced Packaging Bottlenecks:
+Because we rely on TSMC for the production of all our flagship GPU architectures and complex packaging (CoWoS), any operational disruption at TSMC—whether due to natural disasters, seismic activity in Taiwan, geopolitical escalation across the Taiwan Strait, regional power grid failures, or water shortages—would completely halt our ability to supply products. In fiscal year 2024, our revenue was constrained by the industry-wide availability of CoWoS packaging capacity and HBM3 memory supply rather than underlying consumer or enterprise demand.
+
+3. Customer Concentration Risk:
+A significant portion of our Data Center revenue is concentrated among a small number of cloud service providers (CSPs) and consumer internet companies. In fiscal year 2024, one indirect customer (Customer A) accounted for approximately 19% of total consolidated revenue through multiple system integrators, and another customer (Customer B) accounted for approximately 13% of total revenue. Any reduction in capital expenditure (CapEx) budgets by these hyperscalers could cause our revenue to decline precipitously.
+
+4. Internal Silicon Development by Hyperscalers:
+Major cloud customers, including Alphabet (Google TPU), Amazon Web Services (Trainium and Inferentia), Microsoft (Maia 100), and Meta (MTIA), are investing billions of dollars to design in-house custom Application-Specific Integrated Circuits (ASICs) for training and inference. To the extent our customers substitute custom internal silicon for NVIDIA GPU infrastructure, our long-term addressable market could be constrained.
+
+--------------------------------------------------------------------------------
+ITEM 2. PROPERTIES
+--------------------------------------------------------------------------------
+Our corporate headquarters campus is located in Santa Clara, California, and consists of approximately 1.25 million square feet of owned office and laboratory space across two architecturally landmark buildings named "Endeavor" and "Voyager." We also lease approximately 3.8 million square feet of facilities globally across 25 countries, primarily in the United States, Taiwan, Israel, India, Germany, China, and the United Kingdom.
+
+--------------------------------------------------------------------------------
+ITEM 3. LEGAL PROCEEDINGS
+--------------------------------------------------------------------------------
+From time to time, we are involved in disputes, litigation, and regulatory inquiries arising in the ordinary course of business, including patent infringement lawsuits, antitrust investigations, and commercial contract claims.
+In December 2023, the French Competition Authority conducted an unannounced inspection at our French offices as part of an inquiry into competitive practices in the graphics cards and cloud computing sectors. We are cooperating fully with the authority. As of January 28, 2024, we do not believe that the ultimate resolution of any pending matters will have a material adverse effect on our consolidated financial position or results of operations.
+
+================================================================================
+PART II
+================================================================================
+
+--------------------------------------------------------------------------------
+ITEM 7. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS (MD&A)
+--------------------------------------------------------------------------------
+The following discussion compares the financial performance of NVIDIA Corporation for Fiscal Year 2024 (ended January 28, 2024) with Fiscal Year 2023 (ended January 29, 2023) and Fiscal Year 2022 (ended January 30, 2022). All dollar amounts are expressed in millions, except per share data.
+
+Executive Overview & Fiscal Year 2024 Highlights:
+Fiscal year 2024 marked an inflection point in the computing industry. Generative AI and accelerated computing entered the mainstream enterprise adoption phase, driving explosive demand for NVIDIA accelerated platforms.
+- Total Revenue: $60,922 million, an increase of 126% from $26,974 million in fiscal year 2023, and up 126% compared to $26,914 million in fiscal year 2022.
+- Gross Margin: Expanded to 72.7% from 56.9% in fiscal year 2023, driven primarily by strong Data Center revenue growth, favorable product mix, and lower inventory reserve provisions.
+- Operating Income: $32,972 million, an increase of 681% from $4,224 million in fiscal year 2023.
+- Net Income: $29,760 million, representing diluted earnings per share (EPS) of $11.93, up 586% from $1.74 in fiscal year 2023.
+- Cash Flows from Operating Activities: Generated $28,090 million in operating cash flow, compared to $5,641 million in fiscal year 2023.
+
+Revenue Breakdown by Specialized Market:
+The following table details our revenue by specialized market across the past three fiscal years:
+
+======================================================================================================
+Market Platform             FY2024 ($M)    FY2023 ($M)    FY2022 ($M)    FY24 vs FY23 %   FY23 vs FY22 %
+------------------------------------------------------------------------------------------------------
+Data Center                  $47,525        $15,005        $10,613            +217%            +41%
+Gaming                       $10,447        $ 9,067        $12,462            + 15%            -27%
+Professional Visualization   $ 1,553        $ 1,544        $ 2,111            +  1%            -27%
+Automotive                   $ 1,091        $   903        $   566            + 21%            +60%
+OEM & Other                  $   306        $   455        $ 1,162            - 33%            -61%
+------------------------------------------------------------------------------------------------------
+Total Revenue                $60,922        $26,974        $26,914            +126%            +  0%
+======================================================================================================
+
+Detailed Market Commentary:
+1. Data Center:
+Data Center revenue surged 217% to a record $47,525 million. Compute & Networking platforms drove the majority of this growth, led by shipments of the NVIDIA HGX Hopper architecture platform for training and inferencing large language models, generative AI applications, and recommender systems. Networking revenue grew 133% year-over-year to $13,016 million, powered by end-to-end Quantum-2 InfiniBand networking platforms. Revenue growth was led by cloud service providers, representing roughly half of our Data Center revenue, with consumer internet companies and enterprise customers making up the remainder.
+
+2. Gaming:
+Gaming revenue increased 15% to $10,447 million in fiscal year 2024, following a post-pandemic inventory correction that depressed fiscal year 2023 revenue. Growth was driven by the rollout of our GeForce RTX 40 Series desktop and laptop GPUs based on the Ada Lovelace architecture, featuring DLSS 3 neural rendering technology.
+
+3. Professional Visualization:
+Professional Visualization revenue was $1,553 million, up 1% compared to $1,544 million in fiscal year 2023. Strong enterprise demand for RTX Ada Lovelace architecture workstations in the second half of the year offset channel partner inventory digestion during the first half.
+
+4. Automotive:
+Automotive revenue reached $1,091 million, up 21% from $903 million in fiscal year 2023. Growth was driven by increased adoption of NVIDIA DRIVE Orin centralized compute platforms by global electric vehicle manufacturers and autonomous trucking developers.
+
+Revenue Breakdown by Geographic Region (by Billing Location):
+Revenue by billing location does not necessarily reflect the final destination of end-use products:
+
+======================================================================================================
+Geographic Region               FY2024 ($M)      FY2023 ($M)      FY2022 ($M)     FY24 % of Total
+------------------------------------------------------------------------------------------------------
+United States                    $26,956          $ 8,289          $ 4,311             44.2%
+Taiwan                           $13,412          $ 6,986          $ 8,537             22.0%
+China (including Hong Kong)      $10,306          $ 5,785          $ 7,111             16.9%
+Other Countries                  $10,248          $ 5,914          $ 6,955             16.9%
+------------------------------------------------------------------------------------------------------
+Total Revenue                    $60,922          $26,974          $26,914            100.0%
+======================================================================================================
+
+Note on China Revenue:
+In the first three quarters of fiscal year 2024, sales to China accounted for approximately 22% of Data Center revenue. However, following the USG's October 2023 interim final export control rule, Data Center sales to China plummeted to approximately 9% of Data Center revenue in the fourth quarter. We have begun sampling new compliant AI chip alternatives (such as the H20) to customers in China that do not exceed the USG processing performance density thresholds.
+
+Operating Expenses & Margins Analysis:
+======================================================================================================
+Operating Cost Category         FY2024 ($M)      FY2023 ($M)      FY2022 ($M)     FY24 vs FY23 Change
+------------------------------------------------------------------------------------------------------
+Cost of Revenue                  $16,621          $11,618          $10,649             + 43%
+Gross Profit                     $44,301          $15,356          $16,265             +189%
+Gross Margin %                     72.7%            56.9%            60.4%           +15.8 pts
+Research & Development (R&D)     $ 8,675          $ 7,339          $ 5,268             + 18%
+Sales, General & Admin (SG&A)    $ 2,654          $ 2,440          $ 2,166             +  9%
+Total Operating Expenses         $11,329          $ 9,779          $ 7,434             + 16%
+Operating Income                 $32,972          $ 4,224          $ 8,831             +681%
+Operating Margin %                 54.1%            15.7%            32.8%           +38.4 pts
+======================================================================================================
+
+Key Drivers of Operating Performance:
+- Gross Margin Expansion: Gross margin increased by 15.8 percentage points to 72.7%. The surge was driven by the rapid growth of high-margin Data Center architectures (HGX Hopper) and the non-recurrence of $2.17 billion in inventory write-downs and purchase commitment charges incurred in fiscal year 2023.
+- R&D Investment: R&D expenses increased 18% to $8,675 million. The increase reflected substantial engineering investments in our next-generation Blackwell architecture, software development across the CUDA and AI Enterprise platforms, and employee compensation including stock-based awards.
+- Operating Leverage: Because revenue grew 126% while total operating expenses grew only 16%, our operating margin expanded from 15.7% in FY23 to 54.1% in FY24, demonstrating exceptional operational leverage.
+
+Liquidity, Capital Resources and Cash Flow:
+======================================================================================================
+Cash Flow & Liquidity Metric                    FY2024 ($M)          FY2023 ($M)          FY2022 ($M)
+------------------------------------------------------------------------------------------------------
+Cash, Cash Equivalents & Marketable Securities    $25,984              $13,296              $10,908
+Cash Provided by Operating Activities             $28,090              $ 5,641              $ 9,108
+Capital Expenditures (CapEx & Purchases of IP)   $  1,067              $ 1,833              $   976
+Free Cash Flow (Non-GAAP)                         $27,023              $ 3,808              $ 8,132
+Repurchase of Common Stock                        $ 9,532              $10,040              $ 4,500
+Dividends Paid to Shareholders                    $   395              $   398              $   399
+Total Outstanding Long-Term Debt                  $ 8,460              $ 9,703              $ 9,997
+======================================================================================================
+
+- Free Cash Flow reached an unprecedented $27,023 million in fiscal year 2024, compared to $3,808 million in the prior year, primarily reflecting surging net income and efficient working capital turnover.
+- Share Repurchase Program: We returned $9,927 million to shareholders through share repurchases and cash dividends in fiscal 2024. As of January 28, 2024, our Board of Directors had authorized an additional $19.5 billion for future share repurchases with no expiration date.
+
+--------------------------------------------------------------------------------
+ITEM 8. CONSOLIDATED FINANCIAL STATEMENTS
+--------------------------------------------------------------------------------
+
+CONSOLIDATED STATEMENTS OF INCOME
+(In millions, except per share data)
+
+                                                 Year Ended           Year Ended           Year Ended
+                                              January 28, 2024     January 29, 2023     January 30, 2022
+                                              ----------------     ----------------     ----------------
+Revenue                                           $ 60,922             $ 26,974             $ 26,914
+Cost of revenue                                     16,621               11,618               10,649
+                                              ----------------     ----------------     ----------------
+Gross profit                                        44,301               15,356               16,265
+
+Operating expenses:
+  Research and development                           8,675                7,339                5,268
+  Sales, general and administrative                  2,654                2,440                2,166
+  Acquisition termination cost                           -                1,353                    -
+                                              ----------------     ----------------     ----------------
+Total operating expenses                            11,329                9,779                7,434
+                                              ----------------     ----------------     ----------------
+Operating income                                    32,972                4,224                8,831
+
+Interest income                                        866                  267                   29
+Interest expense                                      (257)                (262)                (236)
+Other income (expense), net                            170                 (212)                 107
+                                              ----------------     ----------------     ----------------
+Income before income tax                            33,751                4,017                8,731
+Income tax expense (benefit)                         3,991                 (167)                 756
+                                              ----------------     ----------------     ----------------
+Net income                                        $ 29,760             $  4,368             $  7,975
+                                              ================     ================     ================
+
+Earnings per share:
+  Basic                                           $  12.05             $   1.76             $   3.20
+  Diluted                                         $  11.93             $   1.74             $   3.13
+
+Weighted average shares outstanding:
+  Basic                                              2,469                2,487                2,496
+  Diluted                                            2,494                2,507                2,544
+
+================================================================================
+
+CONSOLIDATED BALANCE SHEETS
+(In millions, except par value)
+
+                                                                           January 28, 2024    January 29, 2023
+                                                                           ----------------    ----------------
+ASSETS
+Current assets:
+  Cash and cash equivalents                                                    $  7,280            $  3,389
+  Marketable securities                                                          18,704               9,907
+  Accounts receivable, net                                                        9,999               3,829
+  Inventories                                                                     5,282               5,159
+  Prepaid expenses and other current assets                                       3,080               1,811
+                                                                           ----------------    ----------------
+Total current assets                                                             44,345              24,095
+
+Property and equipment, net                                                       3,914               3,843
+Goodwill                                                                          4,430               4,430
+Intangible assets, net                                                            1,107               1,623
+Deferred income tax assets                                                        3,918               2,773
+Other non-current assets                                                          8,014               4,420
+                                                                           ----------------    ----------------
+Total assets                                                                   $ 65,728            $ 41,184
+                                                                           ================    ================
+
+LIABILITIES AND STOCKHOLDERS' EQUITY
+Current liabilities:
+  Accounts payable                                                             $  2,699            $  1,193
+  Accrued and other current liabilities                                           6,682               4,121
+  Short-term debt                                                                 1,250               1,250
+                                                                           ----------------    ----------------
+Total current liabilities                                                        10,631               6,564
+
+Long-term debt                                                                    8,460               9,703
+Deferred income tax liabilities                                                     341                 320
+Other non-current liabilities                                                     3,318               2,408
+                                                                           ----------------    ----------------
+Total liabilities                                                                22,750              18,995
+
+Commitments and contingencies (Note 4)
+
+Stockholders' equity:
+  Preferred stock, $0.001 par value; 2 shares authorized; none issued                 -                   -
+  Common stock, $0.001 par value; 4,000 shares authorized; 
+  2,464 and 2,466 shares issued and outstanding                                       3                   3
+  Additional paid-in capital                                                     13,293              11,732
+  Accumulated other comprehensive loss                                              (50)                (42)
+  Retained earnings                                                              29,732              10,496
+                                                                           ----------------    ----------------
+Total stockholders' equity                                                       42,978              22,189
+                                                                           ----------------    ----------------
+Total liabilities and stockholders' equity                                     $ 65,728            $ 41,184
+                                                                           ================    ================
+
+================================================================================
+SELECTED NOTES TO CONSOLIDATED FINANCIAL STATEMENTS
+================================================================================
+
+Note 1: Significant Accounting Policies - Revenue Recognition
+We recognize revenue under ASC 606 when control of promised goods or services is transferred to our customers, in an amount that reflects the consideration we expect to be entitled to in exchange for those goods or services.
+- Product Sales: Revenue from hardware products (e.g., HGX boards, PCIe GPUs, Superchips, InfiniBand switches, cables) is recognized at the point in time when shipment or delivery occurs, depending on contract terms.
+- Software and Cloud Services: Software licenses that include term-based updates and technical support (e.g., NVIDIA AI Enterprise) are recognized ratably over the subscription term. Standalone perpetual licenses with significant standalone functionality are recognized at the point of delivery.
+
+Note 2: Customer Concentration & Credit Risk
+In fiscal year 2024, one indirect customer, Customer A, represented approximately 19% of total consolidated revenue through several primary system integrators. A second customer, Customer B, represented approximately 13% of total consolidated revenue. In fiscal year 2023, Customer A represented approximately 11% of consolidated revenue, and no other customer represented 10% or more.
+As of January 28, 2024, two direct customers accounted for 14% and 11% of total accounts receivable, respectively.
+
+Note 3: Inventory and Supply Commitments
+Inventories are stated at the lower of cost or net realizable value using the first-in, first-out (FIFO) method.
+- Inventory by Component:
+  - Raw materials: $1,556 million as of Jan 28, 2024 ($1,090 million as of Jan 29, 2023).
+  - Work in process: $918 million as of Jan 28, 2024 ($1,544 million as of Jan 29, 2023).
+  - Finished goods: $2,808 million as of Jan 28, 2024 ($2,525 million as of Jan 29, 2023).
+  - Total Inventories: $5,282 million as of Jan 28, 2024 ($5,159 million as of Jan 29, 2023).
+- Outstanding Supply and Capacity Commitments:
+  As of January 28, 2024, we had outstanding inventory purchase commitments and long-term capacity reservation obligations totaling $16.05 billion, up from $7.85 billion in the prior year, primarily reflecting multi-year capacity guarantees for TSMC advanced packaging (CoWoS) and long-term HBM3/HBM3e memory supply agreements.
+
+Note 4: Leases and Minimum Obligations
+We lease facilities under non-cancelable operating leases expiring through 2038. Future undiscounted minimum lease payments under operating leases as of January 28, 2024 were:
+- Fiscal 2025: $286 million
+- Fiscal 2026: $245 million
+- Fiscal 2027: $201 million
+- Fiscal 2028: $174 million
+- Fiscal 2029: $148 million
+- Thereafter: $412 million
+- Total undiscounted lease commitments: $1,466 million.
+
+Note 5: Income Taxes
+In fiscal year 2024, our effective tax rate was 11.8%, compared to (4.2)% in fiscal year 2023 and 8.7% in fiscal year 2022. The effective tax rate in fiscal year 2024 was lower than the U.S. federal statutory rate of 21.0% primarily due to the foreign-derived intangible income (FDII) deduction and federal research and development tax credits, offset by the non-deductibility of certain stock-based compensation.
+
