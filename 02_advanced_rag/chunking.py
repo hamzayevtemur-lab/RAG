@@ -76,7 +76,7 @@ def recursive_split_text(
         piece_len=len(piece) + len(chosen_delim)
 
         # if adding this piece exceeds max_chunk_size, flush current chunk
-        if current_lenght + piece_len> max_chunk_size and current_chunk:
+        if current_length + piece_len > max_chunk_size and current_chunk:
             combined=chosen_delim.join(current_chunk).strip()
             if combined:
                 merged_chunks.append(combined)

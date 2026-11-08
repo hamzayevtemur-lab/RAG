@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Type 2: Advanced RAG Explorer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Top Navigation Header -->
+    <header class="top-nav">
+      <div class="nav-brand">
+        <div class="brand-badge">TYPE 2</div>
+        <div class="brand-title">
+          <h1>Advanced RAG Explorer</h1>
+          <span class="subtitle">Recursive Chunking &bull; Hybrid (Dense + BM25) &bull; RRF &bull; Cross-Encoder Re-Ranking</span>
+        </div>
+      </div>
+      <div class="nav-meta" id="system-stats">
+        <span class="meta-pill"><span class="dot"></span> <span id="stat-chunks">Loading...</span></span>
+        <span class="meta-pill mono" title="Dense Bi-Encoder">Dense: all-MiniLM-L6-v2</span>
+        <span class="meta-pill mono" title="Sparse Lexical">Sparse: BM25 Okapi</span>
+        <span class="meta-pill mono accent" title="Neural Re-Ranker">Re-Ranker: ms-marco</span>
+      </div>
+    </header>
+
+    <!-- Main Chat Feed -->
+    <main class="chat-main">
+      <div class="chat-messages" id="chat-messages">
+        <!-- Welcome Card -->
+        <div class="message assistant welcome-card">
+          <div class="message-header">
+            <span class="role-badge">Advanced Pipeline Active</span>
+            <span class="time-label">Dual-Stage Search + Neural Re-Ranking</span>
+          </div>
+          <div class="message-content">
+            <h3>Welcome to Advanced RAG (Type 2)</h3>
+            <p>
+              Unlike Naive RAG's fixed window slicing and single bi-encoder search, Advanced RAG executes a 
+              <strong>dual-stage retrieval pipeline</strong>:
+            </p>
+            <div class="pipeline-steps-grid">
+              <div class="step-card">
+                <span class="step-num">1</span>
+                <strong>Recursive Chunking</strong>
+                <p>Preserves full table rows, headers, and sentence boundaries.</p>
+              </div>
+              <div class="step-card">
+                <span class="step-num">2</span>
+                <strong>Multi-Query Expansion</strong>
+                <p>LLM formulates 3 search variations to bridge vocabulary mismatch.</p>
+              </div>
+              <div class="step-card">
+                <span class="step-num">3</span>
+                <strong>Hybrid Search (RRF)</strong>
+                <p>Fuses Dense semantic vectors with BM25 Okapi keyword ranks.</p>
+              </div>
+              <div class="step-card">
+                <span class="step-num">4</span>
+                <strong>Cross-Encoder Re-Ranking</strong>
+                <p>Deep pairwise attention filters Top-15 candidates to Top-3 winners.</p>
+              </div>
+            </div>
+
+            <div class="suggested-queries">
+              <span class="suggest-label">Benchmark Queries:</span>
+              <div class="chips-container">
+                <button class="query-chip" data-query="How much HBM3e memory does the H200 GPU have, and how does its bandwidth compare to H100?">⚡ H200 HBM3e vs H100</button>
+                <button class="query-chip" data-query="What specific export control rules did the U.S. government impose on NVIDIA chips shipped to China in October 2023?">🇨🇳 China Export Bans (USG)</button>
+                <button class="query-chip" data-query="How much revenue did each specialized market generate in FY2024, and what was the percentage change vs FY2023?">📊 Segment Revenue Table</button>
+                <button class="query-chip" data-query="What are NVIDIA's total outstanding inventory purchase commitments and long-term capacity obligations for TSMC CoWoS packaging?">🏭 TSMC CoWoS Commitments</button>
+                <button class="query-chip" data-query="What will NVIDIA's stock price be in 2028?">🛡️ Zero-Hallucination Test</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bottom Input Dock -->
+    <footer class="input-dock">
+      <form id="query-form" class="input-form">
+        <div class="input-wrapper">
+          <input 
+            type="text" 
+            id="query-input" 
+            placeholder="Ask a technical or financial question..." 
+            autocomplete="off"
+            required
+          />
+          <button type="submit" id="send-btn" class="send-button">
+            <span class="btn-text">Hybrid Search</span>
+            <svg class="send-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="m22 2-7 20-4-9-9-4Z"/>
+              <path d="M22 2 11 13"/>
+            </svg>
+          </button>
+        </div>
+        <div class="input-options">
+          <label class="toggle-label">
+            <input type="checkbox" id="toggle-expansion" checked>
+            <span>Enable Multi-Query Expansion (3 Variations)</span>
+          </label>
+          <span class="pipeline-spec">Candidates: <strong>Top 15</strong> &bull; Re-Ranked: <strong>Top 3</strong> &bull; Port: <strong>8001</strong></span>
+        </div>
+      </form>
+    </footer>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
+

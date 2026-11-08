@@ -13,7 +13,7 @@ from chunking import AdvancedChunk
 
 
 @dataclass
-class RerankResult:
+class RerankedResult:
     """A final candidate with cross-encoder relevance score."""
     chunk: AdvancedChunk
     rerank_score: float         # Cross-encoder output logit / probability
@@ -21,6 +21,8 @@ class RerankResult:
     rrf_score: float
     dense_rank: int | None
     sparse_rank: int | None
+
+RerankResult = RerankedResult
 
 
 class NeuralReranker:
