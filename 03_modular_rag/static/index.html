@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Type 3: Modular RAG Explorer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Top Navigation Header -->
+    <header class="top-nav">
+      <div class="nav-brand">
+        <div class="brand-badge">TYPE 3</div>
+        <div class="brand-title">
+          <h1>Modular RAG Explorer</h1>
+          <span class="subtitle">Semantic Router &bull; SQLite Tabular SQL &bull; GraphRAG &bull; Hybrid Vector Engine</span>
+        </div>
+      </div>
+      <div class="nav-meta" id="system-stats">
+        <span class="meta-pill sql" title="Structured SQL"><span class="engine-dot amber"></span> SQL: SQLite</span>
+        <span class="meta-pill graph" title="Knowledge Graph"><span class="engine-dot emerald"></span> Graph: 20 Triples</span>
+        <span class="meta-pill vector" title="Dense Vectors"><span class="engine-dot blue"></span> Vector: Text</span>
+        <span class="meta-pill direct" title="Direct Generation"><span class="engine-dot purple"></span> Direct: 0-Lookup</span>
+      </div>
+    </header>
+
+    <!-- Main Chat Feed -->
+    <main class="chat-main">
+      <div class="chat-messages" id="chat-messages">
+        <!-- Welcome Card -->
+        <div class="message assistant welcome-card">
+          <div class="message-header">
+            <span class="role-badge">Semantic Router Active</span>
+            <span class="time-label">Modular Architecture Dispatcher</span>
+          </div>
+          <div class="message-content">
+            <h3>Welcome to Modular RAG (Type 3)</h3>
+            <p>
+              In Modular RAG, questions are <strong>never forced into a single pipeline</strong>. An intelligent 
+              <strong>Semantic Router</strong> inspects your question and dynamically dispatches it to the optimal specialized engine:
+            </p>
+            
+            <div class="modules-grid">
+              <div class="module-card sql-border">
+                <span class="module-tag tag-sql">TABULAR_SQL</span>
+                <strong>SQLite Tabular Engine</strong>
+                <p>Generates deterministic SQL for revenue sums, growth rates, and executive pay.</p>
+              </div>
+              <div class="module-card graph-border">
+                <span class="module-tag tag-graph">GRAPH_RELATIONS</span>
+                <strong>Knowledge Graph (GraphRAG)</strong>
+                <p>Traverses multi-hop entity chains across suppliers, foundries, and packaging.</p>
+              </div>
+              <div class="module-card vector-border">
+                <span class="module-tag tag-vector">VECTOR_SEARCH</span>
+                <strong>Hybrid Vector Engine</strong>
+                <p>Searches unstructured narratives for risk factors, CEO remarks, and ESG data.</p>
+              </div>
+              <div class="module-card direct-border">
+                <span class="module-tag tag-direct">DIRECT ROUTE</span>
+                <strong>Parametric Generator</strong>
+                <p>Answers greetings conversationally with zero database lookups or wasted compute.</p>
+              </div>
+            </div>
+
+            <div class="suggested-queries">
+              <span class="suggest-label">Test Each Specialized Route:</span>
+              <div class="chips-container">
+                <button class="query-chip chip-sql" data-query="What was the total revenue across all specialized markets in FY2024, and which market grew the fastest?">📊 SQL: Total Market Revenue</button>
+                <button class="query-chip chip-sql" data-query="List all NVIDIA executives who had total compensation greater than $17 million in FY2024.">💰 SQL: Executive Compensation</button>
+                <button class="query-chip chip-graph" data-query="Which memory suppliers provide HBM3e for the H200, and what packaging bottleneck limits shipping it?">⚡ Graph: H200 Supply Chain</button>
+                <button class="query-chip chip-vector" data-query="What were the primary risk factors regarding customer concentration and hyperscaler in-house ASICs?">📄 Vector: Customer Risk Factors</button>
+                <button class="query-chip chip-direct" data-query="Hello! What kind of questions can you answer about NVIDIA?">💬 Direct: Conversational Greeting</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bottom Input Dock -->
+    <footer class="input-dock">
+      <form id="query-form" class="input-form">
+        <div class="input-wrapper">
+          <input 
+            type="text" 
+            id="query-input" 
+            placeholder="Ask a financial, supply-chain, or narrative question..." 
+            autocomplete="off"
+            required
+          />
+          <button type="submit" id="send-btn" class="send-button">
+            <span class="btn-text">Route & Answer</span>
+            <svg class="send-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="m22 2-7 20-4-9-9-4Z"/>
+              <path d="M22 2 11 13"/>
+            </svg>
+          </button>
+        </div>
+        <div class="input-options">
+          <span class="pipeline-spec">Engine: <strong>Dynamic Intent Routing</strong> &bull; Database: <strong>data/nvidia_financials.db</strong> &bull; Port: <strong>8002</strong></span>
+        </div>
+      </form>
+    </footer>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
